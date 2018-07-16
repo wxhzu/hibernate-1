@@ -1,0 +1,61 @@
+一、Hibernate
+1.一个持久化框架（它在底层对JDBC进行了封装）	
+	对象的持久化、两个角度理解：
+  1)狭义：把对象存进数据库
+  2)广义：包括数据库的各种操作
+   比如：保存，更新，删除，查找，加载
+   
+ ☆加载：根据特定的OID，把一个对象从数据库中加载到内存中
+#OID表示对象术语中的对象标识(Object identifier)
+
+2.轻量级的ORM框架
+ORM（Object Relation Mapping）对象关系映射
+-ORM主要解决对象-关系的映射
+-ORM思想：将对数据库的操作转换为对对象的操作
+-ORM采用元数据描述对象-关系映射的细节，元数据通常采用xml格式
+
+二、第一个Hibernate应用HelloWorld
+①导入hibernate中的jar包(版本是4.x)
+找到lib文件下的required文件夹，导入里面所有的jar包
+antlr-2.7.7.jar
+dom4j-1.6.1.jar
+hibernate-commons-annotations-4.0.5.Final.jar
+hibernate-core-4.3.10.Final.jar
+hibernate-jpa-2.1-api-1.0.0.Final.jar
+jandex-1.1.0.Final.jar
+javassist-3.18.1-GA.jar
+jboss-logging-3.1.3.GA.jar
+jboss-logging-annotations-1.2.0.Beta1.jar
+jboss-transaction-api_1.2_spec-1.0.0.Final.jar
+并且要加入数据库的jar包
+mysql-connector-java-5.1.7-bin.jar
+
+②Hibernate的开发步骤
+1.创建Hibernate的配置文件hibernate.cfg.xml
+2.创建持久化类
+3.创建对象-关系映射文件(xxx.hbm.xml文件),之后在hibernate.cfg.xml中关联映射文件
+4.编写数据库的访问操作代码
+
+
+
+
+作业：1.首先复习之前的知识，明天早上质检
+    2.把Hibernate的例子自己玩一下
+    3.对照着老师的例子，自己想办法去删除或修改一个用户。确保玩的⑥，有疑问的可以百度玩玩(需要交的)
+    4.预习一下Hibernate，搞清楚Hibernate中SessionFactory和session的地位以及什么是持久化类
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

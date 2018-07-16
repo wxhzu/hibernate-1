@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<!-- 数据库的基本配置 -->
+    	<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    	<property name="hibernate.connection.url">jdbc:mysql:///hibernate01</property>
+    	<property name="hibernate.connection.username">root</property>
+    	<property name="hibernate.connection.password"></property>
+    
+    	<!-- Hibernate的一些配置 -->
+    	<!-- 配置数据库的方言 -->
+    	<property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+    	<!-- 配置数据库的生成策略 -->
+    	<property name="hibernate.hbm2ddl.auto">update</property>
+    	<!-- 配置显示sql语句 -->
+    	<property name="hibernate.show_sql">true</property>
+    	<!-- 配置sql语句排版 -->
+    	<property name="hibernate.format_sql">true</property>
+    	
+    	<!-- 关联映射文件 -->
+    	<mapping resource="com/iotek/entity/User.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>
+
+
+
+
+
+
