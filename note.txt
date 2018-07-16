@@ -9,6 +9,7 @@
 #OID表示对象术语中的对象标识(Object identifier)
 
 2.轻量级的ORM框架
+
 ORM（Object Relation Mapping）对象关系映射
 -ORM主要解决对象-关系的映射
 -ORM思想：将对数据库的操作转换为对对象的操作
